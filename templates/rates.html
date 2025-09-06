@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEVRA-rates</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='utility.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='order.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='rates.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="flex justifycontent">
+            <div class="nav-logo flex alignitem">
+                <div class="logo"><img src="{{ url_for('static', filename='logo.svg') }}" alt="logo">
+                </div>
+                <div class="name">ZEVRA</div>
+            </div>
+            <div class="pages flex alignitem">
+                <div class="page-button"><a href="/">Home</a></div>
+                <div class="page-button"><a href="/order">Order</a></div>
+                <div class="page-button"><a href="/rates">Rates</a></div>
+                <div class="page-button">statics</div>
+            </div>
+        </nav>
+        <main>
+            <div class="rate-container flex">
+                <div class="gold-container">
+                    <div class="gold-logo">
+                        <div><img src="{{ url_for('static', filename='goldlogo.svg') }}" alt="logo"></div>
+                        <div class="gold-logo-text">gold live rate</div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            24k Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{ gold }}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            22k Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{ gold_price_22k }}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            18k Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{ gold_price_18k }}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            18k Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>86000</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                </div>
+                <div class="gold-container">
+                    <div class="gold-logo">
+                        <div><img
+                                src="{{ url_for('static', filename='Gemini_Generated_Image_qn7y21qn7y21qn7y-removebg-preview.png') }}"
+                                alt="logo"></div>
+                        <div class="gold-logo-text">silver live rate</div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            pure silver Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{ silver }}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            925 silver Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{ silver_925 }}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                        <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            900 silver Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{silver_900}}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                    <div class="box-rate">
+                       <h1 style="background: linear-gradient(90deg, #504820, #DAA520, #FFD700);
+                                   -webkit-background-clip: text;
+                                    background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                    color: transparent;
+                                    font-weight: bold;">
+                            800 silver Rate
+                        </h1>
+
+                        <div class="prices">
+                            <div class="ruppes">
+                                <img src="{{ url_for('static', filename='ruppes.svg') }}" alt="logo">
+                            </div>
+                            <div class="price">
+                                <span>{{silver_800}}</span>
+                                <span>/10gram</span>
+                            </div>
+                        </div>
+                        <div class="price-change up">
+                            ▲ 1.5%
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" class="footer-logo">
+                    <h2>Zevra Jewels</h2>
+                    <p>Bringing timeless Indian jewellery designs with a modern touch. Elegant, humble, and unique.</p>
+                </div>
+
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@zevrajewels.com</p>
+                    <p>Phone: +91 98765 43210</p>
+
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Zevra Jewels | All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

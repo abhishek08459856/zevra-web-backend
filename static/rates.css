@@ -1,0 +1,97 @@
+.rate-container {
+    gap: 10px;
+    height: auto;
+    background-color: #f5f4eb;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+.gold-container {
+    padding: 20px;
+    gap: 10px;
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.gold-logo {
+    justify-content: flex-start;
+    padding: 10px;
+    grid-column: 1/3;
+    /* border: 2px solid gold; */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(9, 9, 9, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@500&display=swap');
+.gold-logo-text {
+    text-align: center;
+    padding-top: 13px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 1000;
+    font-size:33px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gold-logo img {
+  width: 60px;
+  height: 60px;   
+  object-fit: contain; 
+}
+
+
+.box-rate {
+    background-color: #f5f4eb;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(9, 9, 9, 0.1);
+    align-items: flex-end;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ruppes img {
+    width: 20px;
+    height: auto;
+}
+
+.price {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #333333;
+}
+
+.price span:last-child {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    margin-left: 4px;
+}
+
+.price-change {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    /* justify-content: center; center it */
+    align-items: center;
+    color: green;
+}

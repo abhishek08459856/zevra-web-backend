@@ -1,0 +1,23 @@
+# cust_id = "CUST-" + str(uuid.uuid4())[:8]
+        # prod_id = "PROD-" + str(uuid.uuid4())[:8]
+
+        
+        # new_customer = Customers(
+        #     customer_id=cust_id,
+        #     fname=fname,
+        #     lname=lname,
+        #     address=address,
+        #     mob_no=mob_no
+        # )
+
+        # new_product = Products(
+        #     product_id=prod_id,
+        #     product_name=product_name,
+        #     carat=int(carat),
+        #     weight=float(weight),
+        #     rate=float(rate),
+        #     making_charge=float(making_charge),
+        #     total_amount=float(total_amount),
+        #     paid_amount=float(paid_amount),
+        #     customer_id=cust_id
+        # )
